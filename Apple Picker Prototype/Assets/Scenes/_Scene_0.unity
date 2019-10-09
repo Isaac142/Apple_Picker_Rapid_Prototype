@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bbda28f59fc434dbc0bb5e4ec8d9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketPrefab: {fileID: 657121541475333692, guid: f9805e67a0c7f4f4ea7492e69488c2c5,
+  basketPrefab: {fileID: 8426573455073235001, guid: f9805e67a0c7f4f4ea7492e69488c2c5,
     type: 3}
   numBaskets: 3
   basketBottomY: -14
@@ -1301,6 +1301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501022859966211188, guid: 30d8059fe19cbcb4f90ea9b2724d8c5d,
+        type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d8059fe19cbcb4f90ea9b2724d8c5d, type: 3}

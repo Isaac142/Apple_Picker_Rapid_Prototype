@@ -8,6 +8,14 @@ public class GameManager : MonoBehaviour
     //Creating a GameManager to hold all the variabled and functions that are specific to the game.
     public bool isPaused = false;
     public UIManager UI;
+    public static GameManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
 
     void Start()
     {
@@ -22,6 +30,14 @@ public class GameManager : MonoBehaviour
         {
             isPaused = !isPaused;
             UI.Pause(isPaused);
+        }
+        if(isPaused)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
         }
     }
 }
